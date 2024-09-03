@@ -14,7 +14,9 @@
             height: 100%;
             margin: 0;
             padding: 0;
-            background-color: #252424;
+            /** background-color: #131313; **/
+            background-image: url(images/testbg1.png);
+            font-family: "Poppins", sans-serif;
             color: white;
             overflow-x: hidden;
         }
@@ -22,6 +24,52 @@
         p {
             line-height: 2;
         }
+
+        .whitefont {
+            color: #fff !important;
+        }
+
+        .grayfont {
+            color: #444 !important;
+        }
+
+        .otto {
+            text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+        }
+
+        .close {
+            text-shadow:
+                0 1px #808d93,
+                -1px 0 #cdd2d5,
+                -1px 2px #808d93,
+                -2px 1px #cdd2d5,
+                -2px 3px #808d93,
+                -3px 2px #cdd2d5,
+                -3px 4px #808d93,
+                -4px 3px #cdd2d5,
+                -4px 5px #808d93,
+                -5px 4px #cdd2d5,
+                -5px 6px #808d93,
+                -6px 5px #cdd2d5,
+                -6px 7px #808d93,
+                -7px 6px #cdd2d5,
+                -7px 8px #808d93,
+                -8px 7px #cdd2d5;
+        }
+
+        .gradientbg {
+            background: rgb(9,76,26);background: linear-gradient(180deg, rgba(9,76,26,1) 20%, rgba(0,61,46,1) 40%, rgba(0,47,49,1) 60%, rgba(0,26,36,1) 80%, rgba(3,5,9,1) 100%);        }
     </style>
 </head>
 
@@ -32,7 +80,7 @@
         <div class="row d-flex justify-content-center m-3">
             <div class="card border-0 p-0 m-0 mb-3">
                 <div class="row g-0" style="border-radius: 20px;">
-                  <div class="col-md-5" style="background-color: #d1ccbd;">
+                  <div class="col-md-5" style="background-color: #999999; box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;">
 
                 <div class="container-lg">
 
@@ -42,13 +90,13 @@
                         
                         <div class="d-flex justify-content-between align-items-center w-100 mx-2">
                             <div>
-                                <h1 class="card-title mb-0">John Napier</h1>
+                                <h1 class="card-title mb-0 whitefont otto">John Napier</h1>
                                 <p class="text-muted">
                                     Mathematician
                                 </p>
                             </div>
                             
-                            <img src="images/play-green.png" width="50px" height="50px" alt="">
+                            <img src="images/play-green.png" width="50px" height="50px" alt="" style="border: 1px solid #999999  ;border-radius: 60px; background-color: #000000">
                         </div>
 
                         <div class="card-body p-0 m-0">
@@ -62,11 +110,11 @@
 
                 </div>
 
-                  <div class="col-md-7 d-flex justify-content-center flex-column align-items-center text-center" style="background-color: #1db954;">
-                    <div class="card-body d-flex justify-content-center flex-column align-items-center text-center mx-2">
+                  <div class="col-md-7 d-flex justify-content-center flex-column align-items-center text-center gradientbg">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center text-center mx-2 whitefont">
              
                         <div class="w-100" style="text-align: start;">
-                            <h1 class="card-title">Logarithms</h1>
+                            <h1 class="card-title whitefont otto">Logarithms</h1>
                         </div>
                     
                         <p class="card-text" style="text-align: justify;">
@@ -112,39 +160,39 @@
 
                     <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
 
-                        <div class="card m-3" style="max-width: 400px; background-color: #1db954;">
+                        <div class="card m-3 gradientbg" style="max-width: 400px;">
                             <img src="images/athmospheric.png" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                             <div class="card-body">
                               <h5 class="card-title text-white">Alterations in Athmospheric C02</h5>
                               <p class="card-text text-white"></p>
                             </div>
                             <div class="d-flex justify-content-end m-2 mb-3">
-                                <img src="images/play-black.png" width="50px" height="50px" alt="">
+                                <img src="images/play-green.png" width="50px" height="50px" alt="">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
 
-                        <div class="card m-3" style="max-width: 400px; background-color: #1db954;">
+                        <div class="card m-3 gradientbg" style="max-width: 400px;">
                             <img src="images/earthquake.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                             <div class="card-body">
                               <h5 class="card-title text-white">Earthquake Magnitude</h5>
                               <p class="card-text text-white"></p>
                             </div>
                             <div class="d-flex justify-content-end m-2 mb-3">
-                                <img src="images/play-black.png" width="50px" height="50px" alt="">
+                                <img src="images/play-green.png" width="50px" height="50px" alt="">
                             </div>
                         </div>
 
-                        <div class="card m-3" style="max-width: 400px; background-color: #1db954;">
+                        <div class="card m-3 gradientbg" style="max-width: 400px;">
                             <img src="images/compoundinterest.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                             <div class="card-body">
                               <h5 class="card-title text-white">Compound Interest</h5>
                               <p class="card-text text-white"></p>
                             </div>
                             <div class="d-flex justify-content-end m-2 mb-3">
-                                <img src="images/play-black.png" width="50px" height="50px" alt="">
+                                <img src="images/play-green.png" width="50px" height="50px" alt="">
                             </div>
                         </div>
                         
@@ -165,7 +213,7 @@
         <div class="row mx-4">
 
             <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                <img src="images/john-napier.webp" width="400px" height="200px" alt="">
+                <img src="images/log1.png" width="400px" height="150px" alt="">
             </div>
 
             <div class="col-lg-6">
@@ -182,12 +230,12 @@
 
     <div class="container-fluid mt-5">
 
-        <div class="card mb-3 mx-3" style="background-color: #393939;">
+        <div class="card mb-3 mx-3 gradientbg">
             <div class="row m-3">
 
               <div class="col-md-8">
 
-                <h1 class="card-title text-white">EXAMPLE 1</h1>
+                <h1 class="card-title text-white otto">EXAMPLE 1</h1>
                 <br>
                 <h3 class="text-white">Express 5^3 = 125 in logarithm form.</h3>
                 <br>
@@ -202,9 +250,9 @@
               <div class="col-md-4 d-flex justify-content-center">
             
                 <div class="card m-3" style="max-width: 400px; background-color: #212121;">
-                    <img src="images/john-napier.webp" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
+                    <img src="images/logex1.png" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                     <div class="card-body">
-                      <h5 class="card-title text-white">Keypoint 1</h5>
+                      <h5 class="card-title text-white text-center">Another Example in Another Form</h5>
                       <p class="card-text text-white"></p>
                     </div>
                     <div class="d-flex justify-content-end m-2 mb-3">
@@ -220,15 +268,15 @@
 
     <div class="container-fluid mt-5">
 
-        <div class="card mb-3 mx-3" style="background-color: #393939;">
+        <div class="card mb-3 mx-3 gradientbg">
             <div class="row m-3">
 
                 <div class="col-md-4 d-flex justify-content-center">
                 
                     <div class="card m-3" style="max-width: 400px; background-color: #212121;">
-                        <img src="images/john-napier.webp" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
+                        <img src="images/logex2.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                         <div class="card-body">
-                        <h5 class="card-title text-white">Keypoint 1</h5>
+                        <h5 class="card-title text-white text-center">Another Example in Another Form</h5>
                         <p class="card-text text-white"></p>
                         </div>
                         <div class="d-flex justify-content-end m-2 mb-3">
@@ -240,7 +288,7 @@
 
                 <div class="col-md-8">
 
-                    <h1 class="card-title text-white">EXAMPLE 2</h1>
+                    <h1 class="card-title text-white otto">EXAMPLE 2</h1>
                     <br>
                     <h3 class="text-white">Find the value of x, if log10(x-10)=1.</h3>
                     <br>
@@ -258,12 +306,12 @@
 
     <div class="container-fluid mt-5">
 
-        <div class="card mb-3 mx-3" style="background-color: #393939;">
+        <div class="card mb-3 mx-3 gradientbg">
             <div class="row m-3">
 
               <div class="col-md-8">
 
-                <h1 class="card-title text-white">EXAMPLE 3</h1>
+                <h1 class="card-title text-white otto">EXAMPLE 3</h1>
                 <br>
                 <h3 class="text-white">Express log base10 (2) + 1 in the form of log base 10 (x).</h3>
                 <br>
@@ -277,9 +325,9 @@
               <div class="col-md-4 d-flex justify-content-center">
             
                 <div class="card m-3" style="max-width: 400px; background-color: #212121;">
-                    <img src="images/john-napier.webp" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
+                    <img src="images/logex3.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                     <div class="card-body">
-                      <h5 class="card-title text-white">Keypoint 1</h5>
+                      <h5 class="card-title text-white text-center">Another Example in Another Form</h5>
                       <p class="card-text text-white"></p>
                     </div>
                     <div class="d-flex justify-content-end m-2 mb-3">
@@ -309,22 +357,22 @@
             </div>
 
             <!--content-->
-            <div class="col-lg-10" style="background-color: #1db954;">
+            <div class="col-lg-10 gradientbg">
 
-                <h1 class="card-title text-dark mt-3">Sample Implementation</h1>
+                <h1 class="card-title mt-3 whitefont otto">Sample Implementation</h1>
                 <div class="d-flex justify-content-start m-2 mb-3">
-                    <img src="images/play-black.png" width="50px" height="50px" alt="">
+                    <img src="images/play-green.png" width="50px" height="50px" alt="">
                 </div>
 
-                <p class="mt-3 text-dark">This sample implementation is designed to find the closest match to a given target string from a list of song names stored in a CSV file using binary search.</p>
+                <p class="mt-3 whitefont">This sample implementation is designed to find the closest match to a given target string from a list of song names stored in a CSV file using binary search.</p>
 
-                <p class="mt-3 text-dark">The csv library is used for reading and writing CSV files, while the SequenceMatcher class from the difflib module is used to compare pairs of sequences and calculate their similarity.</p>
+                <p class="mt-3 whitefont">The csv library is used for reading and writing CSV files, while the SequenceMatcher class from the difflib module is used to compare pairs of sequences and calculate their similarity.</p>
 
-                <p class="mt-3 text-dark">The is_close_match function checks if there are at least min_consecutive consecutive letters in the target string that match a substring in the candidate string.</p>
+                <p class="mt-3 whitefont">The is_close_match function checks if there are at least min_consecutive consecutive letters in the target string that match a substring in the candidate string.</p>
 
-                <p class="mt-3 text-dark">In the binary_search_closest function, initial variables (left, right, closest_match, highest_similarity, iteration) are set up, and the target is converted to lowercase. The binary search loop continues while left is less than or equal to right. The middle index mid is calculated, and the current search range is logged after the 6th iteration, with the number of songs logged from the 1st to 5th iteration. SequenceMatcher is used to calculate the similarity between the target and the middle element. The is_close_match function checks if the middle element is a close match. If the current element has a higher similarity, closest_match is updated. If an exact match is found, the middle element is returned. The search range is adjusted based on lexicographical order.</p>
+                <p class="mt-3 whitefont">In the binary_search_closest function, initial variables (left, right, closest_match, highest_similarity, iteration) are set up, and the target is converted to lowercase. The binary search loop continues while left is less than or equal to right. The middle index mid is calculated, and the current search range is logged after the 6th iteration, with the number of songs logged from the 1st to 5th iteration. SequenceMatcher is used to calculate the similarity between the target and the middle element. The is_close_match function checks if the middle element is a close match. If the current element has a higher similarity, closest_match is updated. If an exact match is found, the middle element is returned. The search range is adjusted based on lexicographical order.</p>
 
-                <p class="mt-3 text-dark">In the read_csv_array function, an empty list named song_names and a list of encodings to try (utf-8, utf-16) are initialized. The function attempts to read the file using each encoding. It opens the file with the current encoding, reads the CSV file, and extends song_names with the rows. If reading is successful, the loop breaks; otherwise, it continues to the next encoding if a UnicodeDecodeError occurs. The function returns the list of all the song names.</p>
+                <p class="mt-3 whitefont">In the read_csv_array function, an empty list named song_names and a list of encodings to try (utf-8, utf-16) are initialized. The function attempts to read the file using each encoding. It opens the file with the current encoding, reads the CSV file, and extends song_names with the rows. If reading is successful, the loop breaks; otherwise, it continues to the next encoding if a UnicodeDecodeError occurs. The function returns the list of all the song names.</p>
                 
                 <div class="d-flex justify-content-start m-2 mb-3">
                     <img src="images/sampleimplementation.png" width="100%" height="200px" alt="">
