@@ -21,6 +21,11 @@
         color: white;
         font-family: "Poppins", sans-serif;
     }
+    .bg{
+        background-image: linear-gradient(to top, #030509, #001a24, #002c31, #003d2e, #094c1a);
+        color: white;
+        font-family: "Poppins", sans-serif;
+    }
     .navbar{
         height: 10rem;
     }
@@ -45,6 +50,21 @@
         max-width: 4vw;
         min-width: 3rem;
     }
+
+    .fade-st1{
+        animation: fade-in 2s;
+    }
+    .fade-st2{
+        animation: fade-in 2.5s;
+    }
+    .fade-st3{
+        animation: fade-in 3s;
+    }
+    
+    @keyframes fade-in {
+        0%{opacity: 0;}
+        100%{opacity:1;}
+    }
     
 </style>
 
@@ -53,7 +73,7 @@
     <div class="container-fluid">
 
         <!-- Meet the team -->
-        <div class="row p-5">
+        <div class="row p-5 shadow-lg rounded-5 mb-5">
             <div class="col-11">
                 <h1>    
                     <b>Meet the Team</b>
@@ -63,26 +83,36 @@
                 </h5>
             </div>
             <div class="col-1">
-                <img class="play" src="images/play-green.png" alt="">
+                <img class="play" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" src="images/play-green.png" alt="">
             </div>
         </div>
 
+        <div class="offcanvas offcanvas-end bg" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h2 class="offcanvas-title shadow-lg p-3 rounded-4" id="offcanvasWithBothOptionsLabel">Logtify</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body p-4">
+            <a style="text-decoration: none; color: white;" href="index.html">Home</a>
+        </div>
+        </div>
+
         <!-- Catalogue 1 -->
-        <div class="row m-3 gap-3 justify-content-start">
+        <div class="row m-3 p-4 gap-3 fade-st1 justify-content-start shadow-lg rounded-4">
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div type="button" data-bs-toggle="modal" data-bs-target="#SamModal">
                     <img class="holder rounded-5 border border-light" src="images/sam.jpg" alt="">
                 </div>
-                <h2>Samuel Agullana</h2>
+                <h3 class="mt-3">Samuel Agullana</h3>
                 <h5>
                     Programmer / Researcher
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div type="button" data-bs-toggle="modal" data-bs-target="#AaronModal">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Aaron.jpg" alt="">
                 </div>
-                <h2>Aaron Bayten</h2>
+                <h3 class="mt-3">Aaron Bayten</h3>
                 <h5>
                     Researcher / Reporter
                 </h5>
@@ -91,16 +121,16 @@
                 <div type="button" data-bs-toggle="modal" data-bs-target="#JohnModal">
                     <img class="holder rounded-5 border border-light" src="images/chris.jpg" alt="">
                 </div>
-                <h2>John Christopher Delos Reyes</h2>
+                <h3 class="mt-3">John Delos Reyes</h3>
                 <h5>
                     Programmer / Researcher
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#KennyModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Kenny.jpg" alt="">
                 </div>
-                <h2>Kenny Francisco</h2>
+                <h3 class="mt-3">Kenny Francisco</h3>
                 <h5>
                     Programmer
                 </h5>
@@ -108,39 +138,39 @@
         </div>
 
         <!-- Catalogue 2 -->
-        <div class="row m-3 gap-3 justify-content-center">
+        <div class="row m-3 p-4 gap-3 fade-st2 justify-content-center shadow-lg rounded-4">
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#JustinModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Justin.png" alt="">
                 </div>
-                <h2>Justin Guiriba</h2>
+                <h3 class="mt-3">Justin Guiriba</h3>
                 <h5>
                     Programmer
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#JinjerModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Jinjer.jpg" alt="">
                 </div>
-                <h2>Jinjer Ico</h2>
+                <h3 class="mt-3">Jinjer Ico</h3>
                 <h5>
                     Designer
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#ZyldjanModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Zyld.jpg" alt="">
                 </div>
-                <h2>Zyldjan Lanticse</h2>
+                <h3 class="mt-3">Zyldjan Lanticse</h3>
                 <h5>
                     Programmer
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#ClarkModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Clark.jpg" alt="">
                 </div>
-                <h2>Clark Livioco</h2>
+                <h3 class="mt-3">Clark Livioco</h3>
                 <h5>
                     Programmer
                 </h5>
@@ -148,30 +178,30 @@
         </div>
 
         <!-- Catalogue 3 -->
-        <div class="row m-3 gap-3 justify-content-end">
+        <div class="row m-3 p-4 gap-3 fade-st3 justify-content-end shadow-lg rounded-4">
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#RhenzModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Rhenz.jpg" alt="">
                 </div>
-                <h2>Rhenz Lloveras</h2>
+                <h3 class="mt-3">Rhenz Lloveras</h3>
                 <h5>
-                    MIA
+                    Developer
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div type="button" data-bs-toggle="modal" data-bs-target="#RenzoModal">
                     <img class="holder rounded-5 border border-light" src="images/renzo.jpg" alt="">
                 </div>
-                <h2>Renzo Mendoza</h2>
+                <h3 class="mt-3">Renzo Mendoza</h3>
                 <h5>
                     Designer
                 </h5>
             </div>
             <div class="col-xl-2 col-lg-5 col-md-12 d-flex flex-column justify-content-center text-center">
                 <div class="type="button" data-bs-toggle="modal" data-bs-target="#ChelseaModal"">
-                    <img class="holder" src="images/gura.png" alt="">
+                    <img class="holder rounded-5 border border-light" src="images/Chelsea.jpg" alt="">
                 </div>
-                <h2>Chelsea Quintero</h2>
+                <h3 class="mt-3">Chelsea Quintero</h3>
                 <h5>
                     Designer
                 </h5>
@@ -180,7 +210,7 @@
                 <div type="button" data-bs-toggle="modal" data-bs-target="#SebastianModal">
                     <img class="holder rounded-5 border border-light" src="images/sebastian.jpg" alt="">
                 </div>
-                <h2>Sebastian Zalzos</h2>
+                <h3 class="mt-3">Sebastian Zalzos</h3>
                 <h5>
                     Programmer
                 </h5>
@@ -211,7 +241,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Aaron Bayten - Researcher / Reporter</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/sam.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Aaron.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -240,7 +270,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Kenny Francisco - Programmer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/chris.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Kenny.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -254,7 +284,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Justin Guiriba - Programmer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/sam.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Justin.png); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -268,7 +298,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Jinjer Ico - Designer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/sam.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Jinjer.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -282,7 +312,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Zyldjan Lanticse - Programmer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/sam.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Zyld.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -296,7 +326,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Clark Livioco - Programmer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/sam.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Clark.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -307,10 +337,10 @@
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Rhenz Lloveras - MIA</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Rhenz Lloveras - Developer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/sam.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Rhenz.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -330,7 +360,7 @@
         </div>
     </div>
 
-    <!-- Renzo Modal -->
+    <!-- Chelsea Modal -->
     <div class="modal fade" id="ChelseaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="dark">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -338,7 +368,7 @@
             <h1 class="modal-title fs-5" id="exampleModalLabel">Chelsea Quintero - Designer</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/renzo.jpg); background-size: cover; background-position: center;">
+            <div class="modal-body d-flex justify-content-center" style="background-image: url(images/Chelsea.jpg); background-size: cover; background-position: center;">
             </div>
         </div>
         </div>
@@ -371,17 +401,17 @@
 
             <!-- Links -->
             <div class="row justify-content-center gap-3 text-center m-3">
-                <div class="col-2 p-3 rounded-5" style="background-color: white; color: black;">
+                <div class="col-xl-2 col-md-2 col-sm-12 p-3 rounded-5" style="background-color: white; color: black;">
                     <h4>
                         Spotify
                     </h4>
                 </div>
-                <div class="col-2 p-3 rounded-5" style="background-color: white; color: black;">
+                <div class="col-xl-2 col-md-2 col-sm-12 p-3 rounded-5" style="background-color: white; color: black;">
                     <h4>
                         Apple Podcast
                     </h4>
                 </div>
-                <div class="col-2 p-3 rounded-5" style="background-color: white; color: black;">
+                <div class="col-xl-2 col-md-2 col-sm-12 p-3 rounded-5" style="background-color: white; color: black;">
                     <h4>
                         Google Podcast
                     </h4>
@@ -399,14 +429,14 @@
             <!-- Links -->
             <div class="row justify-content-center text-center">
                 <div class="col-3 p-3 rounded-5">
-                    <a class="mx-3" href="#">
-                        <img class="links rounded-4" src="images/facebook.png" alt="">
+                    <a href="#">
+                        <img class="links rounded-4 p-2" src="images/facebook.png" alt="">
                     </a>
-                    <a class="mx-3" href="#">
-                        <img class="links rounded-4" src="images/x.png" alt="">
+                    <a href="#">
+                        <img class="links rounded-4 p-2" src="images/x.png" alt="">
                     </a>
-                    <a class="mx-3" href="#">
-                        <img class="links rounded-4" src="images/insta.png" alt="">
+                    <a href="#">
+                        <img class="links rounded-4 p-2" src="images/insta.png" alt="">
                     </a>
                 </div>
             </div>
