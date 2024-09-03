@@ -16,7 +16,7 @@
             padding: 0;
             /** background-color: #131313; **/
             background-image: url(images/testbg1.png);
-            font-family: "Poppins", sans-serif;
+            font-family: "Poppins", sans-serif !important;
             color: white;
             overflow-x: hidden;
         }
@@ -31,6 +31,7 @@
 
         .grayfont {
             color: #444 !important;
+            
         }
 
         .otto {
@@ -69,15 +70,26 @@
         }
 
         .gradientbg {
-            background: rgb(9,76,26);background: linear-gradient(180deg, rgba(9,76,26,1) 20%, rgba(0,61,46,1) 40%, rgba(0,47,49,1) 60%, rgba(0,26,36,1) 80%, rgba(3,5,9,1) 100%);        }
+            background: rgb(9,76,26);background: linear-gradient(180deg, rgba(9,76,26,1) 20%, rgba(0,61,46,1) 40%, rgba(0,47,49,1) 60%, rgba(0,26,36,1) 80%, rgba(3,5,9,1) 100%);
+        }
+
+        .gradientbg2 {
+            background: rgb(9,76,26);background: linear-gradient(180deg, rgba(9,76,26,0.7) 20%, rgba(0,61,46,0.7) 40%, rgba(0,47,49,0.7) 60%, rgba(0,26,36,0.7) 80%, rgba(3,5,9,0.7) 100%);
+        }
+
+        .txtshadowblk {
+            text-shadow: 1px 1px 1px #000000 !important;
+        }
+
     </style>
 </head>
 
-<body>
+<body class="txtshadowblk">
 
     <div class="container-lg mt-5">
 
         <div class="row d-flex justify-content-center m-3">
+            <div class="row d-flex justify-content-center m-3" >
             <div class="card border-0 p-0 m-0 mb-3">
                 <div class="row g-0" style="border-radius: 20px;">
                   <div class="col-md-5" style="background-color: #999999; box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 0, 0, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -20px 20px, rgba(0, 0, 0, 0.05) -25px 25px;">
@@ -91,7 +103,7 @@
                         <div class="d-flex justify-content-between align-items-center w-100 mx-2">
                             <div>
                                 <h1 class="card-title mb-0 whitefont otto">John Napier</h1>
-                                <p class="text-muted">
+                                <p class="text-muted whitefont txtshadowblk">
                                     Mathematician
                                 </p>
                             </div>
@@ -100,7 +112,7 @@
                         </div>
 
                         <div class="card-body p-0 m-0">
-                            <p class="card-text" style="text-align: justify;"> 
+                            <p class="card-text whitefont txtshadowblk" style="text-align: justify;"> 
                                 John Napier introduced the concept of Logarithms in the 17th century. Later it was used by many scientists, navigators, engineers, etc for performing various calculations which made it simple. In simple words, Logarithms are the inverse process of exponentiation.
                             </p>
                         </div>
@@ -160,10 +172,10 @@
 
                     <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
 
-                        <div class="card m-3 gradientbg" style="max-width: 400px;">
+                        <div class="card m-3 gradientbg2" style="max-width: 400px;">
                             <img src="images/athmospheric.png" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                             <div class="card-body">
-                              <h5 class="card-title text-white">Alterations in Athmospheric C02</h5>
+                              <h5 class="card-title text-white">Alterations in Atmospheric C02</h5>
                               <p class="card-text text-white"></p>
                             </div>
                             <div class="d-flex justify-content-end m-2 mb-3">
@@ -174,7 +186,7 @@
 
                     <div class="col-lg-6 d-flex justify-content-center align-items-center flex-column">
 
-                        <div class="card m-3 gradientbg" style="max-width: 400px;">
+                        <div class="card m-3 gradientbg2" style="max-width: 400px;">
                             <img src="images/earthquake.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                             <div class="card-body">
                               <h5 class="card-title text-white">Earthquake Magnitude</h5>
@@ -185,7 +197,7 @@
                             </div>
                         </div>
 
-                        <div class="card m-3 gradientbg" style="max-width: 400px;">
+                        <div class="card m-3 gradientbg2" style="max-width: 400px;">
                             <img src="images/compoundinterest.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                             <div class="card-body">
                               <h5 class="card-title text-white">Compound Interest</h5>
@@ -216,7 +228,7 @@
                 <img src="images/log1.png" width="400px" height="150px" alt="">
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-7">
                 <h1 class="card-title">Why use Logarithms?</h1>
                 <p class="text-white">In Mathematics, logarithms are the other way of writing the exponents. A logarithm of a number with a base is equal to another number. A logarithm is just the opposite function of exponentiation. </p>
                 
@@ -230,7 +242,7 @@
 
     <div class="container-fluid mt-5">
 
-        <div class="card mb-3 mx-3 gradientbg">
+        <div class="card mb-3 mx-3" style="background-color: rgba(0, 0, 0, 0.5);">
             <div class="row m-3">
 
               <div class="col-md-8">
@@ -249,7 +261,7 @@
               </div>
               <div class="col-md-4 d-flex justify-content-center">
             
-                <div class="card m-3" style="max-width: 400px; background-color: #212121;">
+                <div class="card m-3 gradientbg2" style="max-width: 400px;">
                     <img src="images/logex1.png" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                     <div class="card-body">
                       <h5 class="card-title text-white text-center">Another Example in Another Form</h5>
@@ -268,12 +280,12 @@
 
     <div class="container-fluid mt-5">
 
-        <div class="card mb-3 mx-3 gradientbg">
+        <div class="card mb-3 mx-3" style="background-color: rgba(0, 0, 0, 0.5);">
             <div class="row m-3">
 
                 <div class="col-md-4 d-flex justify-content-center">
                 
-                    <div class="card m-3" style="max-width: 400px; background-color: #212121;">
+                    <div class="card m-3 gradientbg2" style="max-width: 400px;">
                         <img src="images/logex2.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                         <div class="card-body">
                         <h5 class="card-title text-white text-center">Another Example in Another Form</h5>
@@ -306,7 +318,7 @@
 
     <div class="container-fluid mt-5">
 
-        <div class="card mb-3 mx-3 gradientbg">
+        <div class="card mb-3 mx-3" style="background-color: rgba(0, 0, 0, 0.5);">
             <div class="row m-3">
 
               <div class="col-md-8">
@@ -324,8 +336,8 @@
               </div>
               <div class="col-md-4 d-flex justify-content-center">
             
-                <div class="card m-3" style="max-width: 400px; background-color: #212121;">
-                    <img src="images/logex3.jpg" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
+                <div class="card m-3 gradientbg2" style="max-width: 400px;">
+                    <img src="images/logex3.png" class="card-img-top p-2" alt="..." style="border-radius: 20px;">
                     <div class="card-body">
                       <h5 class="card-title text-white text-center">Another Example in Another Form</h5>
                       <p class="card-text text-white"></p>
@@ -350,6 +362,8 @@
                     <p class="text-center">Home icon ni basti</p>
                 </div>
                 <div class="d-flex flex-column align-items-center">
+                    <img class="mt-4" src="images/silentsanctueri.jpg" width="80px" height="80px" alt="">
+                    <img class="mt-4" src="images/imaginedregins.jpg" width="80px" height="80px" alt="">
                     <img class="mt-4" src="images/theynotlikeus.png" width="80px" height="80px" alt="">
                     <img class="mt-4" src="images/beatles.jpg" width="80px" height="80px" alt="">
                     <img class="mt-4" src="images/starboy-cover.jfif" width="80px" height="80px" alt="">
@@ -357,7 +371,7 @@
             </div>
 
             <!--content-->
-            <div class="col-lg-10 gradientbg">
+            <div class="col-lg-10" style="background-color: rgba(0, 0, 0, 0.5);">
 
                 <h1 class="card-title mt-3 whitefont otto">Sample Implementation</h1>
                 <div class="d-flex justify-content-start m-2 mb-3">
